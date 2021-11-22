@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>foemulario</title>
-</head>
+    <meta charset="utf-8">
+	<title>formulario</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <script type="text/javascript" src="_js/controller.js"></script>
+</head> 
 <body>
-  <h1>formulario.html</h1>
+  <h1>FORMULÁRIO</h1>
   <a href="index.html">index</a>
-  <form>
-	<p>Nome</p>
-	<input type="text" name="Nome" placeholder="Maria">
-    <br>
-    <p>Email</p>
-    <input type="Email" name="Email" placeholder="maria@gmail.com">
-    <br>
-    <p>Celular</p>
-    <input type="celular" name="celular" placeholder="(XX) XXXXX-XXXX">
-    <br>
-    <p>CPF</p>
-    <input type="CPF" name="CPF" placeholder=" XXX.XXX.XXX-XX">
-    <br>
-    <p>Assunto</p>
-    <input type="Assunto" name="Assunto">
-    <br>
-    <p>Detalhe</p>
-    <input type="Detalhe" name="Detalhe">
-    <br>
-    <p>
-    <input type="submit" name="enviar">
-    <br>
-    <p>
-   </form>
+    <form method="post">
+    	<label>NOME</label>
+    	<input type="text" name="Nome" placeholder="Maria" id="nome">
+        <br><br>
+        <span>Informe a data do seu nascimento</span><br>
+        <input id="date" type="date"> 
+        <br><br>
+        <label>EMAIL</label>
+        <input type="Email" name="Email" placeholder="maria@gmail.com" id="email">
+        <br><br>
+        <label>CELULAR</label>
+        <input type="text" name="celular" placeholder="(XX) XXXXX-XXXX" id= "celular" onblur=maskFone()>
+        <br><br>
+        <label>CPF</label>
+        <input type="text" name="Cpf" placeholder="XXX.XXX.XXX-XX" id= "cpf">
+        <br><br>
+        <label>CEP</label>
+        <input type="text" name="Cep" placeholder=" XXXXX-XXX" id="cep">
+        <br><br>
+        <label>ENDEREÇO</label>
+        <input type="text" name="Endereco" placeholder="RUA: IEDA PESARINE FERREIRA" id="endereco">
+        <br><br>
+        <label>COMPLEMENTO</label>
+        <input type="text" name="Complemento" placeholder="BLOCO 27 APARTAMENTO 32 " id="Complemento">
+        <br><br>
+        <span>Informe seu Gênero</span><br><br>
+        <input type="radio" name="sex" value="male"> Masculino
+        <br><br>
+        <input type="radio" name="sex" value="female"> Feminino
+        <br><br>
+        <input type="radio" name="sex" value="female"> Prefiro não dizer
+        <br><br>
+        <button onclick="verificar()">Testar</button>
+    </form>
 </body>
 </html>

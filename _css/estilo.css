@@ -3,10 +3,14 @@ h1{
 	text-align: center;
 }
 p{
-	font-family: cursive;
+	font-family: Cambria, fantasy;
+	font-size: 
 }
 img{ 
 display: block;
  margin-left: auto;
  margin-right: auto;
+ }
+ body{
+ 	background-color:rgb(249,102,39);
  }
